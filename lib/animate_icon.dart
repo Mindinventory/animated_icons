@@ -96,6 +96,7 @@ class _AnimateIconState extends State<AnimateIcon>
       ),
     );
   }
+
   /// [iconTypeAction] is used for action upon [widget.iconType]
   void iconTypeAction() {
     switch (widget.iconType) {
@@ -122,6 +123,7 @@ class _AnimateIconState extends State<AnimateIcon>
         break;
     }
   }
+
   /// [getLottieDelegates] is used for set color in respected icon
   LottieDelegates getLottieDelegates() {
     return LottieDelegates(
