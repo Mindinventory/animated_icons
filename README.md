@@ -11,7 +11,7 @@
 </a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="MIT License"></a>
 
-This package support a animated icon with some customization. Which is includes a iconType, animateIcon as well as onTap() parameters through user get the values as per the requirements.
+This package supports an animated icon with some customization. It includes an icon type, animation as well as onTap() parameters through the user to get the values as per the requirements.
 
 ## Flutter Web
 
@@ -23,7 +23,7 @@ See a preview here: https://animated-icons-3e8c6.web.app
     AnimateIcon(
             key: UniqueKey(),
             onTap: () {},
-            iconType: iconType,
+            iconType: IconType.continueAnimation,
             height: 70,
             width: 70,
             color: Color.fromRGBO(
@@ -31,7 +31,7 @@ See a preview here: https://animated-icons-3e8c6.web.app
                 Random.secure().nextInt(255),
                 Random.secure().nextInt(255),
                 1),
-            animateIcon: e,
+            animateIcon: AnimateIcons.bell,
         ),
 
 ### Required parameters
