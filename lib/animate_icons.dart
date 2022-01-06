@@ -51,6 +51,7 @@ enum AnimateIcons {
   submitProgress,
   noComments
 }
+
 /// [AnimatedIconsExtension] is for return respcted filepath depend on [AnimateIcons]
 extension AnimatedIconsExtension on AnimateIcons {
   String getAnimatedLottieIcon() {
