@@ -13,6 +13,10 @@
 
 This package support a animated icon with some customization. Which is includes a iconType, animateIcon as well as onTap() parameters through user get the values as per the requirements.
 
+## Flutter Web
+
+See a preview here: https://animated-icons-3e8c6.web.app
+
 ![Animated Icon](https://github.com/mi-ghanshyam/animated_icons/blob/master/assets/demo.png)
 
 ### Example
@@ -55,10 +59,6 @@ This is for user can set the width for animate icon.
 
 ##### onHover():
 This is a callback. Through user can call anythings.
-
-## Flutter Web
-
-See a preview here: https://animated-icons-3e8c6.web.app
 
 ## Guideline for contributors
 Contribution towards our repository is always welcome, we request contributors to create a pull request to the develop branch only.
