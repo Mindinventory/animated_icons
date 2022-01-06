@@ -5,14 +5,31 @@ import 'package:lottie/lottie.dart';
 
 import 'animate_icons.dart';
 
+/// [AnimatedIcon] is use for render animated icon with different parameter and callback
+/// like animateIcon, iconType, onHover, toolTip, onTap, onHover
 class AnimateIcon extends StatefulWidget {
+  /// [onTap] is callback which is send by user depend on requirement
   final Function onTap;
+
+  /// [iconType] provide different state of icon animation
   final IconType iconType;
+
+  /// [height] is for render animate icon with respected height
   final double height;
+
+  /// [width] is for render animate icon with respected width
   final double width;
+
+  /// [color] is for render animate icon with respected color
   final Color color;
+
+  /// [animateIcon] is for render animate icon with respected passed icon
   final AnimateIcons animateIcon;
+
+  /// [onHover] is callback which is send by user depend on requirement
   final Function? onHover;
+
+  /// [toolTip] is for showing messeage when longpress on respected icon
   final String? toolTip;
   const AnimateIcon(
       {Key? key,
@@ -79,7 +96,7 @@ class _AnimateIconState extends State<AnimateIcon>
       ),
     );
   }
-
+  /// [iconTypeAction] is used for action upon [widget.iconType]
   void iconTypeAction() {
     switch (widget.iconType) {
       case IconType.animatedOnHover:
@@ -105,7 +122,7 @@ class _AnimateIconState extends State<AnimateIcon>
         break;
     }
   }
-
+  /// [getLottieDelegates] is used for set color in respected icon
   LottieDelegates getLottieDelegates() {
     return LottieDelegates(
       text: (initialText) => '**$initialText**',
