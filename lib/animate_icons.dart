@@ -72,7 +72,17 @@ enum AnimateIcons {
   vomited,
   confused,
   angel,
-  heart2
+  heart2,
+  bookmark,
+  calendar,
+  calendarTear,
+  battery,
+  chatMessage,
+  clearSymbol,
+  cross,
+  downArrow,
+  error,
+  home
 }
 
 /// [AnimatedIconsExtension] is for return respcted filepath depend on [AnimateIcons]
@@ -207,6 +217,26 @@ extension AnimatedIconsExtension on AnimateIcons {
         return 'assets/angel.json';
       case AnimateIcons.heart2:
         return 'assets/heart_2.json';
+      case AnimateIcons.bookmark:
+        return 'assets/bookmark.json';
+      case AnimateIcons.calendar:
+        return 'assets/calendar.json';
+      case AnimateIcons.calendarTear:
+        return 'assets/calendar-tear.json';
+      case AnimateIcons.battery:
+        return 'assets/battery.json';
+      case AnimateIcons.chatMessage:
+        return 'assets/chat-message.json';
+      case AnimateIcons.clearSymbol:
+        return 'assets/clear-symbol.json';
+      case AnimateIcons.cross:
+        return 'assets/cross.json';
+      case AnimateIcons.downArrow:
+        return 'assets/down-arrow.json';
+      case AnimateIcons.error:
+        return 'assets/fatal-error.json';
+      case AnimateIcons.home:
+        return 'assets/home.json';
       default:
         return 'assets/heart.json';
     }
