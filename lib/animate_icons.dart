@@ -1,5 +1,11 @@
 /// [IconType] is state of animation for [AnimateIcons]
-enum IconType { animatedOnTap, animatedOnHover, continueAnimation, onlyIcon }
+enum IconType {
+  animatedOnTap,
+  animatedOnHover,
+  continueAnimation,
+  onlyIcon,
+  toggleIcon
+}
 
 /// [AnimateIcons] is bunch of icons
 enum AnimateIcons {
@@ -49,7 +55,24 @@ enum AnimateIcons {
   missedCall,
   mapPointer,
   submitProgress,
-  noComments
+  noComments,
+  dollar,
+  smile,
+  wink,
+  shocker,
+  silent,
+  crying,
+  sleeping,
+  inLove,
+  laughing,
+  cool,
+  puzzled,
+  tongueOut,
+  neatralFace,
+  vomited,
+  confused,
+  angel,
+  heart2
 }
 
 /// [AnimatedIconsExtension] is for return respcted filepath depend on [AnimateIcons]
@@ -150,6 +173,40 @@ extension AnimatedIconsExtension on AnimateIcons {
         return 'assets/submit_progress.json';
       case AnimateIcons.noComments:
         return 'assets/no_comments.json';
+      case AnimateIcons.dollar:
+        return 'assets/dollar.json';
+      case AnimateIcons.smile:
+        return 'assets/smile.json';
+      case AnimateIcons.wink:
+        return 'assets/wink.json';
+      case AnimateIcons.shocker:
+        return 'assets/shocker.json';
+      case AnimateIcons.silent:
+        return 'assets/silent.json';
+      case AnimateIcons.crying:
+        return 'assets/crying.json';
+      case AnimateIcons.sleeping:
+        return 'assets/sleeping.json';
+      case AnimateIcons.inLove:
+        return 'assets/in_love.json';
+      case AnimateIcons.laughing:
+        return 'assets/laughing.json';
+      case AnimateIcons.cool:
+        return 'assets/cool.json';
+      case AnimateIcons.puzzled:
+        return 'assets/puzzled.json';
+      case AnimateIcons.tongueOut:
+        return 'assets/tongue_out.json';
+      case AnimateIcons.neatralFace:
+        return 'assets/neatral_face.json';
+      case AnimateIcons.vomited:
+        return 'assets/vomited.json';
+      case AnimateIcons.confused:
+        return 'assets/confused.json';
+      case AnimateIcons.angel:
+        return 'assets/angel.json';
+      case AnimateIcons.heart2:
+        return 'assets/heart_2.json';
       default:
         return 'assets/heart.json';
     }

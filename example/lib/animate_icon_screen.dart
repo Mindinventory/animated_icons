@@ -15,7 +15,7 @@ class AnimateIconScreen extends StatelessWidget {
       child: SingleChildScrollView(
         child: Center(
           child: Wrap(
-            alignment: WrapAlignment.spaceBetween,
+            alignment: WrapAlignment.center,
             children: AnimateIcons.values
                 .map(
                   (AnimateIcons e) => Padding(
