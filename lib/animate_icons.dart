@@ -82,7 +82,22 @@ enum AnimateIcons {
   cross,
   downArrow,
   error,
-  home
+  home,
+  info,
+  list,
+  print,
+  powerOff,
+  qrCode,
+  rotate,
+  save,
+  signOut,
+  discount,
+  file,
+  mail,
+  liveVideo,
+  dragLeft,
+  dragRight,
+  calculator
 }
 
 /// [AnimatedIconsExtension] is for return respcted filepath depend on [AnimateIcons]
@@ -237,6 +252,36 @@ extension AnimatedIconsExtension on AnimateIcons {
         return 'assets/fatal-error.json';
       case AnimateIcons.home:
         return 'assets/home.json';
+      case AnimateIcons.info:
+        return 'assets/info-click.json';
+      case AnimateIcons.list:
+        return 'assets/list.json';
+      case AnimateIcons.print:
+        return 'assets/print.json';
+      case AnimateIcons.powerOff:
+        return 'assets/power-off-button.json';
+      case AnimateIcons.qrCode:
+        return 'assets/qr-code.json';
+      case AnimateIcons.rotate:
+        return 'assets/rotate.json';
+      case AnimateIcons.save:
+        return 'assets/save-changes.json';
+      case AnimateIcons.signOut:
+        return 'assets/sign-out.json';
+      case AnimateIcons.discount:
+        return 'assets/discount.json';
+      case AnimateIcons.file:
+        return 'assets/file.json';
+      case AnimateIcons.mail:
+        return 'assets/gmail.json';
+      case AnimateIcons.liveVideo:
+        return 'assets/live-video-on.json';
+      case AnimateIcons.dragLeft:
+        return 'assets/drag-left.json';
+      case AnimateIcons.dragRight:
+        return 'assets/drag-right.json';
+      case AnimateIcons.calculator:
+        return 'assets/calculator.json';
       default:
         return 'assets/heart.json';
     }
