@@ -97,7 +97,17 @@ enum AnimateIcons {
   liveVideo,
   dragLeft,
   dragRight,
-  calculator
+  calculator,
+  volume,
+  playStop2,
+  walk,
+  skateboarding,
+  toggle,
+  paid,
+  expensive,
+  diamond,
+  fogWeather,
+  dayNightWeather
 }
 
 /// [AnimatedIconsExtension] is for return respcted filepath depend on [AnimateIcons]
@@ -282,6 +292,27 @@ extension AnimatedIconsExtension on AnimateIcons {
         return 'assets/drag-right.json';
       case AnimateIcons.calculator:
         return 'assets/calculator.json';
+      case AnimateIcons.volume:
+        return 'assets/volume.json';
+      case AnimateIcons.playStop2:
+        return 'assets/play_stop_2.json';
+      case AnimateIcons.walk:
+        return 'assets/walk.json';
+      case AnimateIcons.skateboarding:
+        return 'assets/skateboarding.json';
+      case AnimateIcons.toggle:
+        return 'assets/toggle.json';
+      case AnimateIcons.paid:
+        return 'assets/paid.json';
+      case AnimateIcons.expensive:
+        return 'assets/expensive.json';
+      case AnimateIcons.diamond:
+        return 'assets/diamond.json';
+      case AnimateIcons.fogWeather:
+        return 'assets/fog_weather.json';
+      case AnimateIcons.dayNightWeather:
+        return 'assets/day_night_weather.json';
+
       default:
         return 'assets/heart.json';
     }
