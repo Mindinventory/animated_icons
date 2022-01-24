@@ -1,6 +1,6 @@
 name: animated_icon
 description: This package support a animated icon with some customization like color, animate, hover, callback.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/mi-ghanshyam/animated_icons
 
 environment:

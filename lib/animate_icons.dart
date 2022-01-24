@@ -110,6 +110,13 @@ enum AnimateIcons {
   dayNightWeather,
   menu,
   checkbox,
+  loading1,
+  loading2,
+  loading3,
+  loading4,
+  loading5,
+  loading6,
+  loading7
 }
 
 /// [AnimatedIconsExtension] is for return respcted filepath depend on [AnimateIcons]
@@ -318,6 +325,20 @@ extension AnimatedIconsExtension on AnimateIcons {
         return 'assets/menu.json';
       case AnimateIcons.checkbox:
         return 'assets/checkbox.json';
+      case AnimateIcons.loading1:
+        return 'assets/loading_1.json';
+      case AnimateIcons.loading2:
+        return 'assets/loading_2.json';
+      case AnimateIcons.loading3:
+        return 'assets/loading_3.json';
+      case AnimateIcons.loading4:
+        return 'assets/loading_4.json';
+      case AnimateIcons.loading5:
+        return 'assets/loading_5.json';
+      case AnimateIcons.loading6:
+        return 'assets/loading_6.json';
+      case AnimateIcons.loading7:
+        return 'assets/loading_7.json';
       default:
         return 'assets/heart.json';
     }
