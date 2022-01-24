@@ -107,7 +107,9 @@ enum AnimateIcons {
   expensive,
   diamond,
   fogWeather,
-  dayNightWeather
+  dayNightWeather,
+  menu,
+  checkbox,
 }
 
 /// [AnimatedIconsExtension] is for return respcted filepath depend on [AnimateIcons]
@@ -312,7 +314,10 @@ extension AnimatedIconsExtension on AnimateIcons {
         return 'assets/fog_weather.json';
       case AnimateIcons.dayNightWeather:
         return 'assets/day_night_weather.json';
-
+      case AnimateIcons.menu:
+        return 'assets/menu.json';
+      case AnimateIcons.checkbox:
+        return 'assets/checkbox.json';
       default:
         return 'assets/heart.json';
     }
