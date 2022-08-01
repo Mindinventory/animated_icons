@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_icon/animate_icons.dart';
 
@@ -56,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage>
               child: TabBar(
                 tabs: IconType.values.map((page) {
                   return Text(
-                    page.name,
+                    page.toString().split('.').last,
                     style: const TextStyle(color: Colors.black),
                   );
                 }).toList(),
