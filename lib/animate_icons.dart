@@ -1,5 +1,11 @@
 /// [IconType] is state of animation for [AnimateIcons]
-enum IconType { animatedOnTap, animatedOnHover, continueAnimation, onlyIcon }
+enum IconType {
+  animatedOnTap,
+  animatedOnHover,
+  continueAnimation,
+  onlyIcon,
+  toggleIcon
+}
 
 /// [AnimateIcons] is bunch of icons
 enum AnimateIcons {
@@ -49,7 +55,68 @@ enum AnimateIcons {
   missedCall,
   mapPointer,
   submitProgress,
-  noComments
+  noComments,
+  dollar,
+  smile,
+  wink,
+  shocker,
+  silent,
+  crying,
+  sleeping,
+  inLove,
+  laughing,
+  cool,
+  puzzled,
+  tongueOut,
+  neatralFace,
+  vomited,
+  confused,
+  angel,
+  heart2,
+  bookmark,
+  calendar,
+  calendarTear,
+  battery,
+  chatMessage,
+  clearSymbol,
+  cross,
+  downArrow,
+  error,
+  home,
+  info,
+  list,
+  print,
+  powerOff,
+  qrCode,
+  rotate,
+  save,
+  signOut,
+  discount,
+  file,
+  mail,
+  liveVideo,
+  dragLeft,
+  dragRight,
+  calculator,
+  volume,
+  playStop2,
+  walk,
+  skateboarding,
+  toggle,
+  paid,
+  expensive,
+  diamond,
+  fogWeather,
+  dayNightWeather,
+  menu,
+  checkbox,
+  loading1,
+  loading2,
+  loading3,
+  loading4,
+  loading5,
+  loading6,
+  loading7
 }
 
 /// [AnimatedIconsExtension] is for return respcted filepath depend on [AnimateIcons]
@@ -150,6 +217,128 @@ extension AnimatedIconsExtension on AnimateIcons {
         return 'assets/submit_progress.json';
       case AnimateIcons.noComments:
         return 'assets/no_comments.json';
+      case AnimateIcons.dollar:
+        return 'assets/dollar.json';
+      case AnimateIcons.smile:
+        return 'assets/smile.json';
+      case AnimateIcons.wink:
+        return 'assets/wink.json';
+      case AnimateIcons.shocker:
+        return 'assets/shocker.json';
+      case AnimateIcons.silent:
+        return 'assets/silent.json';
+      case AnimateIcons.crying:
+        return 'assets/crying.json';
+      case AnimateIcons.sleeping:
+        return 'assets/sleeping.json';
+      case AnimateIcons.inLove:
+        return 'assets/in_love.json';
+      case AnimateIcons.laughing:
+        return 'assets/laughing.json';
+      case AnimateIcons.cool:
+        return 'assets/cool.json';
+      case AnimateIcons.puzzled:
+        return 'assets/puzzled.json';
+      case AnimateIcons.tongueOut:
+        return 'assets/tongue_out.json';
+      case AnimateIcons.neatralFace:
+        return 'assets/neatral_face.json';
+      case AnimateIcons.vomited:
+        return 'assets/vomited.json';
+      case AnimateIcons.confused:
+        return 'assets/confused.json';
+      case AnimateIcons.angel:
+        return 'assets/angel.json';
+      case AnimateIcons.heart2:
+        return 'assets/heart_2.json';
+      case AnimateIcons.bookmark:
+        return 'assets/bookmark.json';
+      case AnimateIcons.calendar:
+        return 'assets/calendar.json';
+      case AnimateIcons.calendarTear:
+        return 'assets/calendar-tear.json';
+      case AnimateIcons.battery:
+        return 'assets/battery.json';
+      case AnimateIcons.chatMessage:
+        return 'assets/chat-message.json';
+      case AnimateIcons.clearSymbol:
+        return 'assets/clear-symbol.json';
+      case AnimateIcons.cross:
+        return 'assets/cross.json';
+      case AnimateIcons.downArrow:
+        return 'assets/down-arrow.json';
+      case AnimateIcons.error:
+        return 'assets/fatal-error.json';
+      case AnimateIcons.home:
+        return 'assets/home.json';
+      case AnimateIcons.info:
+        return 'assets/info-click.json';
+      case AnimateIcons.list:
+        return 'assets/list.json';
+      case AnimateIcons.print:
+        return 'assets/print.json';
+      case AnimateIcons.powerOff:
+        return 'assets/power-off-button.json';
+      case AnimateIcons.qrCode:
+        return 'assets/qr-code.json';
+      case AnimateIcons.rotate:
+        return 'assets/rotate.json';
+      case AnimateIcons.save:
+        return 'assets/save-changes.json';
+      case AnimateIcons.signOut:
+        return 'assets/sign-out.json';
+      case AnimateIcons.discount:
+        return 'assets/discount.json';
+      case AnimateIcons.file:
+        return 'assets/file.json';
+      case AnimateIcons.mail:
+        return 'assets/gmail.json';
+      case AnimateIcons.liveVideo:
+        return 'assets/live-video-on.json';
+      case AnimateIcons.dragLeft:
+        return 'assets/drag-left.json';
+      case AnimateIcons.dragRight:
+        return 'assets/drag-right.json';
+      case AnimateIcons.calculator:
+        return 'assets/calculator.json';
+      case AnimateIcons.volume:
+        return 'assets/volume.json';
+      case AnimateIcons.playStop2:
+        return 'assets/play_stop_2.json';
+      case AnimateIcons.walk:
+        return 'assets/walk.json';
+      case AnimateIcons.skateboarding:
+        return 'assets/skateboarding.json';
+      case AnimateIcons.toggle:
+        return 'assets/toggle.json';
+      case AnimateIcons.paid:
+        return 'assets/paid.json';
+      case AnimateIcons.expensive:
+        return 'assets/expensive.json';
+      case AnimateIcons.diamond:
+        return 'assets/diamond.json';
+      case AnimateIcons.fogWeather:
+        return 'assets/fog_weather.json';
+      case AnimateIcons.dayNightWeather:
+        return 'assets/day_night_weather.json';
+      case AnimateIcons.menu:
+        return 'assets/menu.json';
+      case AnimateIcons.checkbox:
+        return 'assets/checkbox.json';
+      case AnimateIcons.loading1:
+        return 'assets/loading_1.json';
+      case AnimateIcons.loading2:
+        return 'assets/loading_2.json';
+      case AnimateIcons.loading3:
+        return 'assets/loading_3.json';
+      case AnimateIcons.loading4:
+        return 'assets/loading_4.json';
+      case AnimateIcons.loading5:
+        return 'assets/loading_5.json';
+      case AnimateIcons.loading6:
+        return 'assets/loading_6.json';
+      case AnimateIcons.loading7:
+        return 'assets/loading_7.json';
       default:
         return 'assets/heart.json';
     }

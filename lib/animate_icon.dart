@@ -121,6 +121,14 @@ class _AnimateIconState extends State<AnimateIcon>
             .then((value) => _animationController.repeat());
 
         break;
+      case IconType.toggleIcon:
+        if (_animationController.isCompleted) {
+          _animationController.reverse();
+        } else {
+          _animationController.forward();
+        }
+
+        break;
     }
   }
 
