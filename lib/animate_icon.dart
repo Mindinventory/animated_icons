@@ -59,6 +59,13 @@ class _AnimateIconState extends State<AnimateIcon>
   }
 
   @override
+  void dispose() {
+    _animationController.stop();
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return InkWell(
       onHover: (_) {
