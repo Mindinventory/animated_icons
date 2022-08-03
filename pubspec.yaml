@@ -1,6 +1,6 @@
 name: animated_icon
 description: This package support a animated icon with some customization like color, animate, hover, callback.
-version: 0.0.3
+version: 0.0.4
 repository: https://github.com/Mindinventory/animated_icons
 
 environment:
