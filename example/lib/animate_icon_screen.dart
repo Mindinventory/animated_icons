@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-import 'package:animated_icon/animate_icon.dart';
-import 'package:animated_icon/animate_icons.dart';
+import 'package:animated_icon/animated_icon.dart';
 
 class AnimateIconScreen extends StatelessWidget {
-  const AnimateIconScreen({required this.iconType, Key? key}) : super(key: key);
+  const AnimateIconScreen({
+    required this.iconType,
+    Key? key,
+  }) : super(key: key);
 
   final IconType iconType;
 
