@@ -1,65 +1,80 @@
-library animated_icon;
-
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-import 'animate_icons.dart';
+import 'animate_icon_config.dart';
 
 /// [AnimatedIcon] is use for render animated icon with different parameter and callback
 /// like animateIcon, iconType, onHover, toolTip, onTap, onHover
 class AnimateIcon extends StatefulWidget {
   /// [onTap] is callback which is send by user depend on requirement
+  /// used to perform actions on tap
+  /// required parameter for AnimateIcon
   final Function onTap;
 
   /// [iconType] provide different state of icon animation
+  /// based on it the action is happen
+  /// required parameter for AnimateIcon
   final IconType iconType;
 
   /// [height] is for render animate icon with respected height
+  /// Default Value: [50]
   final double height;
 
   /// [width] is for render animate icon with respected width
+  /// Default Value: [50]
   final double width;
 
   /// [color] is for render animate icon with respected color
+  /// Default Value: [Colors.black]
   final Color color;
 
   /// [animateIcon] is for render animate icon with respected passed icon
+  /// required parameter for AnimateIcon
   final AnimateIcons animateIcon;
 
   /// [onHover] is callback which is send by user depend on requirement
+  /// optional parameter for AnimateIcon
   final Function? onHover;
 
-  /// [toolTip] is for showing messeage when longpress on respected icon
+  /// [toolTip] is for showing message when long-press on respected icon
+  /// optional parameter for AnimateIcon
   final String? toolTip;
-  const AnimateIcon(
-      {Key? key,
-      required this.onTap,
-      required this.iconType,
-      required this.animateIcon,
-      this.height = 50,
-      this.width = 50,
-      this.color = Colors.black,
-      this.onHover,
-      this.toolTip})
-      : super(key: key);
+
+  const AnimateIcon({
+    Key? key,
+    required this.onTap,
+    required this.iconType,
+    required this.animateIcon,
+    this.height = 50,
+    this.width = 50,
+    this.color = Colors.black,
+    this.onHover,
+    this.toolTip,
+  }) : super(key: key);
 
   @override
-  _AnimateIconState createState() => _AnimateIconState();
+  State<AnimateIcon> createState() => _AnimateIconState();
 }
 
+/// State class of the [AnimateIcon]
 class _AnimateIconState extends State<AnimateIcon>
     with TickerProviderStateMixin {
+  /// Used to control the behaviour of the animation
   late final AnimationController _animationController;
 
+  /// Initialize the class object
   @override
   void initState() {
     super.initState();
 
+    /// Setting vsync for the frame binding
     _animationController = AnimationController(vsync: this);
   }
 
+  /// Remove the object values
   @override
   void dispose() {
+    /// Removing animation controller from the memory
     _animationController.stop();
     _animationController.dispose();
     super.dispose();
@@ -72,7 +87,7 @@ class _AnimateIconState extends State<AnimateIcon>
         if (widget.iconType == IconType.animatedOnHover) {
           iconTypeAction();
         }
-        widget.onHover ?? () {};
+        widget.onHover?.call();
       },
       onTap: () {
         if (widget.iconType != IconType.continueAnimation) {
@@ -105,6 +120,8 @@ class _AnimateIconState extends State<AnimateIcon>
   }
 
   /// [iconTypeAction] is used for action upon [widget.iconType]
+  /// animatedOnTap, animatedOnHover, continueAnimation, onlyIcon, toggleIcon
+  /// Based on this behaviour of the animation is defined
   void iconTypeAction() {
     switch (widget.iconType) {
       case IconType.animatedOnHover:
@@ -140,6 +157,7 @@ class _AnimateIconState extends State<AnimateIcon>
   }
 
   /// [getLottieDelegates] is used for set color in respected icon
+  /// using its lottie key paths
   LottieDelegates getLottieDelegates() {
     return LottieDelegates(
       text: (initialText) => '**$initialText**',

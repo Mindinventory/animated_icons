@@ -1,4 +1,4 @@
- # animated_icon
+# animated_icon
 
 <a href="https://developer.android.com" style="pointer-events: stroke;" target="_blank">
 <img src="https://img.shields.io/badge/platform-android-blue">
@@ -13,13 +13,15 @@
 
 This package supports an animated icon with some customization. It includes an icon type, animation as well as onTap() parameters through the user to get the values as per the requirements.
 
-## Flutter Web
+## Available on Flutter Web
 
-See a preview here: https://animated-icons-3e8c6.web.app
+See a flutter web preview here: https://animated-icons-3e8c6.web.app
 
+# Preview
 ![Animated Icon](https://github.com/mi-ghanshyam/animated_icons/blob/master/assets/demo.png)
 
-### Example
+## Example
+```dart
     AnimateIcon(
             key: UniqueKey(),
             onTap: () {},
@@ -32,7 +34,8 @@ See a preview here: https://animated-icons-3e8c6.web.app
                 Random.secure().nextInt(255),
                 1),
             animateIcon: AnimateIcons.bell,
-        ),
+        );
+```
 
 ### Required parameters
 
@@ -71,8 +74,9 @@ It would be great for us if the reporter can share the below things to understan
 - Device specification like (Manufacturer, OS version, etc)
 - Screenshot/video with steps to reproduce the issue.
 
-## Library used
-- [lottie](https://pub.dev/packages/lottie "lottie")
+### Dependencies
+
+* [lottie](https://pub.dev/packages/lottie): ^2.3.2
 
 # LICENSE!
 Bubble Slider is [MIT-licensed](https://github.com/mi-ghanshyam/animated_icons/blob/master/LICENSE "MIT-licensed").

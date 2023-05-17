@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:animated_icon/animate_icons.dart';
+import 'package:animated_icon/animated_icon.dart';
 
 import 'animate_icon_screen.dart';
 

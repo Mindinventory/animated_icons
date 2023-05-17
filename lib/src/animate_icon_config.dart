@@ -1,4 +1,5 @@
 /// [IconType] is state of animation for [AnimateIcons]
+/// Using it animation behaviour is described
 enum IconType {
   animatedOnTap,
   animatedOnHover,
@@ -8,6 +9,7 @@ enum IconType {
 }
 
 /// [AnimateIcons] is bunch of icons
+/// This icons we're supporting right now
 enum AnimateIcons {
   bell,
   heart,
@@ -119,7 +121,7 @@ enum AnimateIcons {
   loading7
 }
 
-/// [AnimatedIconsExtension] is for return respcted filepath depend on [AnimateIcons]
+/// [AnimatedIconsExtension] is used to return relevant filepath depend on [AnimateIcons]
 extension AnimatedIconsExtension on AnimateIcons {
   String getAnimatedLottieIcon() {
     switch (this) {
