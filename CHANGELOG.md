@@ -1,3 +1,7 @@
+## 0.0.6
+
+* Migrate to latest version
+
 ## 0.0.5
 
 * Fixed the version solving issue [#4](https://github.com/Mindinventory/animated_icons/issues/4).
