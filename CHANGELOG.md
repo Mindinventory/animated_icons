@@ -1,3 +1,6 @@
+## 0.0.7
+* Migrate to latest version
+
 ## 0.0.6
 
 * Migrate to latest version

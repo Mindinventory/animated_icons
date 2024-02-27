@@ -13,12 +13,8 @@
 
 This package supports an animated icon with some customization. It includes an icon type, animation as well as onTap() parameters through the user to get the values as per the requirements.
 
-## Available on Flutter Web
-
-See a flutter web preview here: https://animated-icons-3e8c6.web.app
-
 # Preview
-![Animated Icon](https://github.com/mi-ghanshyam/animated_icons/blob/master/assets/demo.png)
+![Animated Icon](https://github.com/manish-mind/animated_icons/blob/master/assets/animated_icon_gif/animated_icon.gif)
 
 ## Example
 ```dart

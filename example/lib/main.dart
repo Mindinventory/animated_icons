@@ -32,8 +32,7 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage>
-    with SingleTickerProviderStateMixin {
+class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateMixin {
   late TabController _tabController;
   bool isRepeat = false;
   @override
@@ -53,10 +52,16 @@ class _MyHomePageState extends State<MyHomePage>
             SizedBox(
               height: 50,
               child: TabBar(
+                tabAlignment: TabAlignment.start,
+                dividerColor: Colors.transparent,
+                isScrollable: true,
                 tabs: IconType.values.map((page) {
-                  return Text(
-                    page.toString().split('.').last,
-                    style: const TextStyle(color: Colors.black),
+                  return Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: Text(
+                      page.spacedCapitalizedString,
+                      style: const TextStyle(color: Colors.black),
+                    ),
                   );
                 }).toList(),
                 controller: _tabController,

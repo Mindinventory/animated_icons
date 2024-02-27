@@ -1,11 +1,19 @@
 /// [IconType] is state of animation for [AnimateIcons]
 /// Using it animation behaviour is described
-enum IconType {
-  animatedOnTap,
-  animatedOnHover,
-  continueAnimation,
-  onlyIcon,
-  toggleIcon
+enum IconType { animatedOnTap, animatedOnHover, continueAnimation, onlyIcon, toggleIcon }
+
+extension MyEnumExtension on IconType {
+  String get spacedCapitalizedString {
+    String enumString = toString().split('.').last;
+    return enumString
+        .replaceAllMapped(
+          RegExp(r'(?<=[a-z])[A-Z]'),
+          (match) => ' ${match.group(0)!}',
+        )
+        .split(' ')
+        .map((word) => word[0].toUpperCase() + word.substring(1))
+        .join(' ');
+  }
 }
 
 /// [AnimateIcons] is bunch of icons
