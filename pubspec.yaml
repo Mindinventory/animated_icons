@@ -1,12 +1,11 @@
 name: animated_icon
 description: This package support a animated icon with some customization like color, animate, hover, callback.
-version: 0.0.8
+version: 0.0.9
 repository: https://github.com/Mindinventory/animated_icons
 issue_tracker: https://github.com/Mindinventory/animated_icons/issues
 
 environment:
   sdk: '>=3.2.0 <4.0.0'
-  flutter: ">=3.16.0"
 
 dependencies:
   flutter:

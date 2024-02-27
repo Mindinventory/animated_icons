@@ -1,6 +1,12 @@
 /// [IconType] is state of animation for [AnimateIcons]
 /// Using it animation behaviour is described
-enum IconType { animatedOnTap, animatedOnHover, continueAnimation, onlyIcon, toggleIcon }
+enum IconType {
+  animatedOnTap,
+  animatedOnHover,
+  continueAnimation,
+  onlyIcon,
+  toggleIcon
+}
 
 extension MyEnumExtension on IconType {
   String get spacedCapitalizedString {
@@ -78,7 +84,7 @@ enum AnimateIcons {
   cool,
   puzzled,
   tongueOut,
-  neatralFace,
+  neutralFace,
   vomited,
   confused,
   angel,
@@ -251,8 +257,8 @@ extension AnimatedIconsExtension on AnimateIcons {
         return 'assets/puzzled.json';
       case AnimateIcons.tongueOut:
         return 'assets/tongue_out.json';
-      case AnimateIcons.neatralFace:
-        return 'assets/neatral_face.json';
+      case AnimateIcons.neutralFace:
+        return 'assets/neutral_face.json';
       case AnimateIcons.vomited:
         return 'assets/vomited.json';
       case AnimateIcons.confused:
