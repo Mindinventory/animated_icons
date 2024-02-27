@@ -14,7 +14,7 @@
 This package supports an animated icon with some customization. It includes an icon type, animation as well as onTap() parameters through the user to get the values as per the requirements.
 
 # Preview
-![Animated Icon](https://github.com/manish-mind/animated_icons/blob/master/assets/animated_icon_gif/animated_icon.gif)
+<img  src="https://github.com/Mindinventory/animated_icons/blob/master/assets/animated_icon_gif/animated_icon.gif?raw=true"  width="275" height=550/>
 
 ## Example
 ```dart
